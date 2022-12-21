@@ -4,6 +4,7 @@ library(tibble)
 library(magrittr)
 library(dplyr)
 library(lubridate)
+library(plumberDeploy)
 
 #* @apiTitle Stock Market Data API
 #* @apiDescription Example of how to setup a Plumber API with just a few lines of code
@@ -22,3 +23,9 @@ financial_data <- function(symbol,from = today()-months(1),to = today()) {
     arrange(date=desc(date))
   data 
 }
+
+analogsea::account()
+analogsea::key_create
+analogsea::droplets()
+mydrop <- plumberDeploy::do_provision()
+analogsea::install_r_package(mydrop)
