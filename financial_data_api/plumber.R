@@ -24,8 +24,23 @@ financial_data <- function(symbol,from = today()-months(1),to = today()) {
   data 
 }
 
-analogsea::account()
-analogsea::key_create
-analogsea::droplets()
-mydrop <- plumberDeploy::do_provision()
-analogsea::install_r_package(mydrop)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#analogsea::account()
+#analogsea::key_create
+#analogsea::droplets()
+#mydrop <- plumberDeploy::do_provision()
+#analogsea::install_r_package(mydrop)
